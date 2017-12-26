@@ -1,6 +1,6 @@
-# Simple Vue App
+# Master Detail Vue App
 
-This is an example of a very simple Vue.js application, intended to help one explore the implementation of the common UI use-case using Vue.
+This is an example of a very simple Vue.js application, intended to help one explore the implementation of a common UI use-case using Vue.
 
 ## Getting Started
 
