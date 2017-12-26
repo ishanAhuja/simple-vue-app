@@ -1,11 +1,10 @@
 <template>
   <div class="screen">
-
     <!-- "masthead" is a vue component that is imported into this component on line 30, and registered with the App component (this component) on line 76. To create a new component, simply create a file with at least the template tag. Then import it and register it with the component you want to use your new component from. You can nest as many components as needed, without restrictions. -->
     <masthead />
     <div class="two-pane">
       <!-- Imported on line 32, registered on line 75-->
-      <sidebar :selected-item="selectedItem" :items="items" @select="setSelectedItem" />
+      <sidebar :selected-item-id="selectedItem ? selectedItem.id : null" :items="items" @select="setSelectedItem" />
 
       <!-- Imported on line 32, registered on line 77-->
       <detail-view :item="selectedItem" />
